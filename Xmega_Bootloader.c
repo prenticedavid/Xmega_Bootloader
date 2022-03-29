@@ -72,7 +72,7 @@ int main(void)
                 sendchar(RESPONSE_YES);                       // Yes, we do autoincrement.
 
             else if(val == COMMAND_SET_ADDRESS) {             // Set address (words, not bytes)
-                address = ((ADDR_T)recchar() << 8) | recchar();
+                address = ((ADDR_T)recchar() << 8) | recchar(); // ensure unsigned ADDR_T expression
                 sendchar(RESPONSE_OKAY);                      // Send OK back.
             }
 
