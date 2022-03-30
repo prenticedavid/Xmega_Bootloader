@@ -25,7 +25,7 @@ PROJECT = Xmega_Bootloader
 #  MCU = atxmega16a4
 #  MCU = atxmega16a4u
 #  MCU = atxmega16c4
-MCU = atxmega16d4
+#  MCU = atxmega16d4
 #  MCU = atxmega16e5
 #  MCU = atxmega32a4
 #  MCU = atxmega32a4u
@@ -44,7 +44,7 @@ MCU = atxmega16d4
 #  MCU = atxmega64c3
 #  MCU = atxmega64d3
 #  MCU = atxmega64d4
-#  MCU = atxmega128a1
+MCU = atxmega128a1
 #  MCU = atxmega128a1u
 #  MCU = atxmega128a3
 #  MCU = atxmega128a3u
@@ -81,14 +81,14 @@ MCU = atxmega16d4
 # the option as C,3. Then specifiy the logic value required to enable the
 # bootloader code (1 = enable the bootloader if the pin is VCC, 0 = enable 
 # the bootloader if the pin is GND).
-  BOOTLOADER_PIN    = B,2
+  BOOTLOADER_PIN    = D,5
   BOOTLOADER_PIN_ON = 0
   
 # Specify a pin to control an LED. The notation is PORT,PIN. For example, if
 # you wanted to use PIN 6 on PORTA, you would set the option as A,6. Then
 # specifiy the logic value required to enable the LED (1 = output VCC to turn
 # on the LED, 0 = output GND to turn on the LED).
-  LED_PIN = D,2
+  LED_PIN = E,5
   LED_ON  = 0
 
 # Specify which UART to use with PORT,NUM notation. For example, UART1 on
